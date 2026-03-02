@@ -31,6 +31,96 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">RLinf-USER: A Unified and Extensible System for Real-World Online Policy Learning in Embodied AI</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Hongzhi Zang</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Shu'ang Yu</a><sup>1,6*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Hao Lin</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Tianxing Zhou</a><sup>3,5</sup>,</span>
+            <span class="author-block">
+              <a href="#">Zefang Huang</a><sup>4,5</sup>,</span>
+            <span class="author-block">
+              <a href="#">Zhen Guo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Xin Xu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Jiakai Zhou</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Yuze Sheng</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Si Xu</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Shizhe Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Feng Gao</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Wenhao Tang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Yufeng Yue</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="#">Quanlu Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Xinlei Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Chao Yu</a><sup>1#&dagger;</sup>,</span>
+            <span class="author-block">
+              <a href="#">Yu Wang</a><sup>1&dagger;</sup>
+            <span class="author-block">
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University,</span>
+            <span class="author-block"><sup>2</sup>Infinigence AI,</span>
+            <span class="author-block"><sup>3</sup>Beijing Institute of Technology,</span>
+            <span class="author-block"><sup>4</sup>Zhejiang University,</span>
+            <span class="author-block"><sup>5</sup>Zhongguancun Academy,</span>
+            <span class="author-block"><sup>6</sup>Shanghai AI Laboratory</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution,</span>
+            <span class="author-block"><sup>#</sup>Project Leader,</span>
+            <span class="author-block"><sup>&dagger;</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2602.07837"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2602.07837"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/RLinf/RLinf"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -45,7 +135,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence. Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, which makes scalable data collection, heterogeneous deployment, and longhorizon effective training difficult. These challenges suggest that real-world policy learning is not only an algorithmic issue but fundamentally a systems problem. We present USER, a <span style="text-decoration: underline;"><strong>U</strong></span>nified and extensible <span style="text-decoration: underline;"><strong>S</strong></span>yst<span style="text-decoration: underline;"><strong>E</strong></span>m for <span style="text-decoration: underline;"><strong>R</strong></span>eal-world online policy learning. USER treats physical robots as first-class hardware resources alongside GPUs through a unified hardware abstraction layer, enabling automatic discovery, management, and scheduling of heterogeneous robots. To address cloud–edge communication, USER introduces an adaptive communication plane with tunnelingbased networking, distributed data channels for traffic localization, and streaming-multiprocessor-aware weight synchronization to regulate GPU-side overhead. On top of this infrastructure, USER organizes learning as a fully asynchronous framework with a persistent, cache-aware buffer, enabling efficient long-horizon experiments with robust crash recovery and reuse of historical data. In addition, USER provides extensible abstractions for rewards, algorithms, and policies, supporting online imitation or reinforcement learning of CNN/MLP, generative policies, and large vision–language–action (VLA) models within a unified pipeline. Results in both simulation and the real world show that USER enables multi-robot coordination, heterogeneous manipulators, edge–cloud collaboration with large models, and longrunning asynchronous training, offering a unified and extensible systems foundation for real-world online policy learning.<!-- Our code is available in <a href="https://github.com/RLinf/RLinf">here</a>.-->
+            Online policy learning directly in the physical world is a promising yet challenging direction for embodied intelligence. Unlike simulation, real-world systems cannot be arbitrarily accelerated, cheaply reset, or massively replicated, which makes scalable data collection, heterogeneous deployment, and longhorizon effective training difficult. These challenges suggest that real-world policy learning is not only an algorithmic issue but fundamentally a systems problem. We present USER, a <span style="text-decoration: underline;"><strong>U</strong></span>nified and extensible <span style="text-decoration: underline;"><strong>S</strong></span>yst<span style="text-decoration: underline;"><strong>E</strong></span>m for <span style="text-decoration: underline;"><strong>R</strong></span>eal-world online policy learning. USER treats physical robots as first-class hardware resources alongside GPUs through a unified hardware abstraction layer, enabling automatic discovery, management, and scheduling of heterogeneous robots. To address cloud–edge communication, USER introduces an adaptive communication plane with tunnelingbased networking, distributed data channels for traffic localization, and streaming-multiprocessor-aware weight synchronization to regulate GPU-side overhead. On top of this infrastructure, USER organizes learning as a fully asynchronous framework with a persistent, cache-aware buffer, enabling efficient long-horizon experiments with robust crash recovery and reuse of historical data. In addition, USER provides extensible abstractions for rewards, algorithms, and policies, supporting online imitation or reinforcement learning of CNN/MLP, generative policies, and large vision–language–action (VLA) models within a unified pipeline. Results in both simulation and the real world show that USER enables multi-robot coordination, heterogeneous manipulators, edge–cloud collaboration with large models, and longrunning asynchronous training, offering a unified and extensible systems foundation for real-world online policy learning. Our code is available in <a href="https://github.com/RLinf/RLinf">here</a>.
           </p>
         </div>
       </div>
@@ -55,11 +145,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
-        <div class="item publication-video">
-          <video id="USER-video" controls autoplay muted loop playsinline height="100%">
-            <source src="./static/videos/USER-video.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="publication-video">
+          <iframe src="https://youtu.be/embed/BKsc7lg3d9s"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
